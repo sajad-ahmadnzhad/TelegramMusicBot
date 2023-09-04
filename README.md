@@ -85,10 +85,8 @@ bot.on("callback_query", (msg) => {
 });
 ```
 
-<h1>output
- 
+<h1>output</h1>
 <p align="center">
     <img src="https://github.com/sajad-ahmadnzhad/TelegramMusicBot/blob/master/img/messageBot.jpg?raw=true" />
 </p>
-</h1>
 
