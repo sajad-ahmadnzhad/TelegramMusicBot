@@ -1,7 +1,5 @@
 let mongoose = require('mongoose')
-
-mongoose.connect('mongodb://0.0.0.0:27017/BotTelegarm')
+require('dotenv').config({ path: '../.env' });
+mongoose.connect(process.env.URL_DATABASE)
 .then(() => console.log('conect to db bot successfully'))
 .catch((err) => console.log(err))
-
-
