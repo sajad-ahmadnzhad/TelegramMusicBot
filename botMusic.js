@@ -68,8 +68,8 @@ bot.on("message", async (message) => {
       singer: nameSinger,
     });
     if (checkData.length) return;
-    fs.writeFileSync("musicName.txt", `${nameMusic}\n`, { flag: "a" });
-    fs.writeFileSync("singerName.txt", `${nameSinger}`);
+    fs.writeFileSync("addMusic&Singer/musicName.txt", `${nameMusic}\n`, { flag: "a" });
+    fs.writeFileSync("addMusic&Singer/singerName.txt", `${nameSinger}`);
     await musicModel.create({
       name: nameMusic,
       singer: nameSinger,
@@ -80,8 +80,8 @@ bot.on("message", async (message) => {
   if (message?.text == "save" && id == 1088935787) {
     const result = [];
     let backToListSingers = "برگشت به لیست خواننده ها";
-    let musics = fs.readFileSync("musicName.txt").toString().trim().split("\n");
-    let singername = fs.readFileSync("singerName.txt").toString();
+    let musics = fs.readFileSync("addMusic&Singer/musicName.txt").toString().trim().split("\n");
+    let singername = fs.readFileSync("addMusic&Singer/singerName.txt").toString();
     if (!musics || !singername) return bot.sendMessage(id, "value is empty");
     for (let i = 0; i < musics.length; i += 2) {
       if (musics[i + 1]) {
@@ -100,15 +100,15 @@ bot.on("message", async (message) => {
       nameMusicsSinger: result,
     });
 
-    fs.writeFileSync("musicName.txt", "");
-    fs.writeFileSync("singerName.txt", "");
+    fs.writeFileSync("addMusic&Singer/musicName.txt", "");
+    fs.writeFileSync("addMusic&Singer/singerName.txt", "");
     bot.sendMessage(id, "saved Musics " + singername + " sucessfully");
   }
 
   if (message?.text == "update" && id == 1088935787) {
     const result = [];
-    let musics = fs.readFileSync("musicName.txt").toString().trim().split("\n");
-    let singerName = fs.readFileSync("singerName.txt").toString();
+    let musics = fs.readFileSync("addMusic&Singer/musicName.txt").toString().trim().split("\n");
+    let singerName = fs.readFileSync("addMusic&Singer/singerName.txt").toString();
     if (!musics || !singerName) return bot.sendMessage(id, "value is empty");
     for (let i = 0; i < musics.length; i += 2) {
       if (musics[i + 1]) {
@@ -140,8 +140,8 @@ ${music}\n\nجهت رفتن به موزیک های ${singerName} بر روی د�
 
     console.log(dataMarkups);
 
-    fs.writeFileSync("musicName.txt", "");
-    fs.writeFileSync("singerName.txt", "");
+    fs.writeFileSync("addMusic&Singer/musicName.txt", "");
+    fs.writeFileSync("addMusic&Singer/singerName.txt", "");
 
     bot.sendMessage(
       id,
