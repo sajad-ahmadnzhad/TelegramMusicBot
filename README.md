@@ -13,7 +13,7 @@
 <h1>What capabilities does this robot have?</h1>
 
 - User's favorite music list
-- Adding a reader to the list by the user
+- Adding a reader to the list of favorites by the user
 - Invite friends to the bot
 - Robot music management panel by the manager
 - Send music to friends
