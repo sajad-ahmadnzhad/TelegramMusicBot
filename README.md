@@ -13,7 +13,7 @@
 <h1>What capabilities does this robot have?</h1>
 
 - User's favorite music list
-- Adding a reader to the list by the user
+- Adding a reader to the list of favorites by the user
 - Invite friends to the bot
 - Robot music management panel by the manager
 - Send music to friends
@@ -85,9 +85,8 @@ bot.on("callback_query", (msg) => {
 });
 ```
 
-<h1>output
+<h1>output</h1>
 <p align="center">
-    <img src="" />
+    <img src="https://github.com/sajad-ahmadnzhad/TelegramMusicBot/blob/master/img/messageBot.jpg?raw=true" />
 </p>
-</h1>
 
