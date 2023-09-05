@@ -1,6 +1,6 @@
 <h1 align="center"><a href="https://t.me/Play_MusicBot_bot">Telegram Music Bot</a></h1>
 <p align="center">
-<img height="400px" width="700px" src="https://github.com/sajad-ahmadnzhad/TelegramMusicBot/blob/master/img/profileBotMusic.jpg?raw=true"/>
+<img src="https://images5.alphacoders.com/756/756925.jpg"/>
 </p>
 
 <h1>
