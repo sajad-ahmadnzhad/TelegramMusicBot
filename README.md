@@ -15,6 +15,7 @@
 - User's favorite music list
 - Adding a reader to the list of favorites by the user
 - Invite friends to the bot
+- Add comments to music and see other people's comments
 - Robot music management panel by the manager
 - Send music to friends
 - Get biographies of singers
